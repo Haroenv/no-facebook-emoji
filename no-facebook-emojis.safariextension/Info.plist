@@ -36,15 +36,10 @@
 	<dict>
 		<key>Website Access</key>
 		<dict>
-			<key>Allowed Domains</key>
-			<array>
-				<string>https://*.facebook.com/*</string>
-				<string>https://messenger.com/*</string>
-			</array>
 			<key>Include Secure Pages</key>
 			<true/>
 			<key>Level</key>
-			<string>Some</string>
+			<string>All</string>
 		</dict>
 	</dict>
 	<key>Website</key>
