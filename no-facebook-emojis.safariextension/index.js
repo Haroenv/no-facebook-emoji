@@ -24,9 +24,9 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
       try {
         var added = mutation.addedNodes;
         if (added) {
-          // go over all dom changes
+          // go over all DOM changes
           for (var i = 0; i < added.length; i++) {
-            // check if it has a src
+            // check if it has a source
             if (typeof added[i].src != 'undefined') {
               // check if it's an evil emoji
               if (added[i].src.includes('emoji.php')) {
@@ -54,10 +54,9 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
 
     // fancy way that isn't done
     //
-    // observator on the body for just the childList
+    // observer on the body only for the childList
     // observer.observe(document.body, {
     //   childList: true
     // });
   });
-
 }
