@@ -11,6 +11,7 @@
     {
       "matches": ["*://*.messenger.com/*","*://*.facebook.com/*"],
       "js": ["scripts/background.js"],
+      "css": ["css/no-facebook-emojis.css"],
       "run_at": "document_start"
     }
   ],
