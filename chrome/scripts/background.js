@@ -6,7 +6,7 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
     // fixes #4
     var large = node.classList.contains('_1ifu');
     var huge = node.classList.contains('_19_r');
-    node.outerHTML = '<span style="font-size:'+(large?'2rem;':(huge?'3rem;':'1rem;'))+'">&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';</span>';
+    node.outerHTML = '<span class="apple-font" style="font-size:'+(large?'2rem;':(huge?'3rem;':'1rem;'))+'">&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';</span>';
   }
 
   // find all emojis
