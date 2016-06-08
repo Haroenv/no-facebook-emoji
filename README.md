@@ -16,11 +16,11 @@ As you can see, from nice emojis, our conversation partner went online, that's a
 
 ## Safari
 
-Right now I don't have a dev license from Apple, but if anyone of you knows how to properly distribute without shelling out $99, let me know!
+Soon signed!
 
 ## Chrome
 
-Soon on the Chrome Web Store
+Soon on the Chrome Web Store, now in the `releases` [tab](https://github.com/Haroenv/no-facebook-emojis/releases/)
 
 # Bugs
 
