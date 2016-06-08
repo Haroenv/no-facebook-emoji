@@ -4,7 +4,7 @@ branches:
   - master
 install:
 script:
-  - zip -r no-facebook-emojis.safariextension no-facebook-emojis.safariextension
+  - zip -r no-facebook-emojis.safariextension.zip no-facebook-emojis.safariextension
 deploy:
   skip_cleanup: true
   provider: releases
