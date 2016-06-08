@@ -1,3 +1,8 @@
-._6h1._6gb:hover, ._4rv9._30yy:hover {
+._6h1._6gb:hover, ._30yy:hover {
     text-decoration: none;
+}
+._30yy span {
+    display: block;
+    margin-top: 15px;
+    font-size: 2rem !important;
 }
