@@ -42,7 +42,7 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
   });
 
   // change all of them when loaded
-  window.addEventListener('DOMFocusIn', function() {
+  window.addEventListener('DOMContentLoaded', function() {
     // change once at the start
     changeAll();
 
