@@ -1,0 +1,18 @@
+language: shell
+branches:
+  only:
+  - master
+install:
+script:
+  - zip -r no-facebook-emojis.safariextension.zip no-facebook-emojis.safariextension
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: wKtS2C+yZLIYn+Gy9vTy+NinV/wX2uv9s+E1i/QcUYIgCIEihfkhEOebhvAYlrTz2y49RVamAJVqRFP8FQI8+6uvjDlarhy8qT1M+wVZlYmQQZ9mlGQVu90Q7gV+rlhyJSoWkWGY3+gcJ5ibDamUE8y0N6uH9RLbusJ0JXV8cmobJEu5OM0NPK+A1PqgKxJhZVTw1zN3iKdgD/SsKQkNiqLa12xP/agRwNeOUayIlC64i4dKFrmTlnHtVE0nWQJXA2V1Zw6MZFyjLh416e332C9jQSf2dxzkjXpGZXggfxhindeo4ENvDZjvzTbWb905I/eX4jQDB7yrV6gcYiUFxQQrIU5aOFizs/mdPkmrIqr73JpWyr1a6q3VvA1hljeMvsjjsuKuUrhlyYuc/5nQKOtnFSYaC0dVzXt3Bnb2lJA6T/e3dlXNDTsNB9QLStMnlfGDh3cMZsoYPxPAHGhAvAY3t0034ezA5nbnnqvGiudi984kgdYVSU5lSL/YWab4MvCSDK9npkhlXDq3kBGGiVEMIkHYI/lukjMFGLPxej8iKDunzIEe1fc80qUmArmgrkZHvfz1/1JsZaVa6PNvxYuiGX0xNqpvmcBcdoJRV1zNBNd+lOV1u++Cv441ROAKRkx3XQzZaYr/nfCexZoU0D6KJFif3XykG2pKKlRqhS0=
+  file:
+    - no-facebook-emojis.safariextension.zip
+  on:
+    tags: true
+    repo: Haroenv/no-facebook-emojis
+    branch: master
