@@ -32,6 +32,7 @@ Currently you need to jump through a few hoops to install it (and you need to do
 Soon on the Chrome Web Store, now in the `releases` [tab](https://github.com/Haroenv/no-facebook-emojis/releases/)
 
 1. Download `chrome.crx` from [releases](https://github.com/Haroenv/no-facebook-emojis/releases/)
+1. Go to <chrome://extensions>
 1. Drag that file onto your browser and click agree
 
 # Bugs
