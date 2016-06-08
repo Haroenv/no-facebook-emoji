@@ -20,7 +20,7 @@ Right now I don't have a dev license from Apple, but if anyone of you knows how 
 
 ## Chrome
 
-not yet
+Soon on the Chrome Web Store
 
 # Bugs
 
