@@ -6,9 +6,11 @@ Well just as a lot of you, I dislike the new Facebook emojis quite a bit. So I m
 
 I think this is clear?
 
-![before](img/before.png)
+before|after
+---|---
+![before](img/before.png) | ![after](img/after.png)
 
-![after](img/after.png)
+As you can see, from nice emojis, our conversation partner went online, that's a huge improvement!
 
 # Installation
 
