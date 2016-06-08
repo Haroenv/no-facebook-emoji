@@ -42,7 +42,7 @@ This is mostly tested on OS X because that's what I have and that's the OS that 
 How to fix this? You can try setting Emoji One or another font as default. Some useful links:
 
 * https://github.com/eosrei/emojione-color-font#install-on-windows
-* ...
+* http://emojione.com/chrome/
 
 # Bugs
 
