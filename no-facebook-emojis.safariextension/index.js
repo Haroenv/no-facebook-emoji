@@ -1,7 +1,10 @@
 if (location.href.includes('facebook.com') || location.href.includes('messenger.com')) {
   // change a single image
   var change = function(node) {
-    node.outerHTML = '<span>' + '&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';' + '</span>';
+    // class for large emoji's is '_1ifu'
+    // fixes #4
+    var large = node.classList.contains('_1ifu');
+    node.outerHTML = '<span'+(large?' style="font-size: 2em;"':'')+'>&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';</span>';
   }
 
   // find all emojis
