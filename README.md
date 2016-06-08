@@ -4,6 +4,8 @@
 
 Well, just as many of you, I dislike the new Facebook emojis quite a bit. So I made a browser extension that replaces it with regular old unicode emojis.
 
+[![Build Status](https://travis-ci.org/Haroenv/no-facebook-emojis.svg?branch=master)](https://travis-ci.org/Haroenv/no-facebook-emojis)
+
 # Why?
 
 I think this is clear?
