@@ -2,6 +2,14 @@
 
 Well just as a lot of you, I dislike the new Facebook emojis quite a bit. So I made a browser extension that replaces it with regular old unicode emojis.
 
+# Why?
+
+I think this is clear?
+
+![before](img/before.png)
+
+![after](img/after.png)
+
 # Installation
 
 ## Safari
