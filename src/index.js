@@ -1,7 +1,6 @@
 if (location.href.includes('facebook.com') || location.href.includes('messenger.com')) {
   // change a single image
   var change = function(node) {
-    console.log(node);
     node.outerHTML = '<span>' + '&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';' + '</span>';
   }
 
@@ -33,22 +32,24 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
           }
         }
       } catch (e) {
-
+        console.log(e);
       }
     });
   });
 
   // change all of them when loaded
   window.addEventListener('DOMContentLoaded', function() {
+    // change once at the start
     changeAll();
-    setTimeout(function(){
-      console.log("changing");
+
+    // change every 500ms because it's cool to
+    setInterval(function(){
       changeAll();
     },500);
-    // observator on the body for just the childList
-    //
+
     // fancy way that isn't done
     //
+    // observator on the body for just the childList
     // observer.observe(document.body, {
     //   childList: true
     // });
