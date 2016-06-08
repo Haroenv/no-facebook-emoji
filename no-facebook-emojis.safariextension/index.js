@@ -1,3 +1,4 @@
+/** @todo: get this in manifests (Safari) */
 if (location.href.includes('facebook.com') || location.href.includes('messenger.com')) {
   // change a single image
   var change = function(node) {
@@ -41,7 +42,7 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
   });
 
   // change all of them when loaded
-  window.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('DOMFocusIn', function() {
     // change once at the start
     changeAll();
 
