@@ -18,6 +18,6 @@ deploy:
     - chrome.crx
   on:
     # todo: why does this not properly work
-    tags: false
+    tags: true
     repo: Haroenv/no-facebook-emojis
     branch: master
