@@ -5,7 +5,7 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
     // class for large emoji's is '_1ifu'
     // fixes #4
     var large = node.classList.contains('_1ifu');
-    node.outerHTML = '<span style="font-size:'+(large?:'2em;"':'1rem;')+'>&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';</span>';
+    node.outerHTML = '<span style="font-size:'+(large?'2rem;':'1rem;')+'">&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';</span>';
   }
 
   // find all emojis
