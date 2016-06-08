@@ -17,6 +17,7 @@ deploy:
     - no-facebook-emojis.safariextz
     - chrome.crx
   on:
-    tags: true
+    # todo: why does this not properly work
+    tags: false
     repo: Haroenv/no-facebook-emojis
     branch: master
