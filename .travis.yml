@@ -16,6 +16,5 @@ deploy:
     - no-facebook-emojis.safariextension.zip
     - chrome.crx
   on:
-    tags: true
     repo: Haroenv/no-facebook-emojis
     branch: master
