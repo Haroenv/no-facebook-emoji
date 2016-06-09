@@ -3,9 +3,11 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
   // change a single image
   var change = function(node) {
     // class for large emoji's is '_1ifu'
+    // class for huge emoji's in '_19_r'
     // fixes #4
     var large = node.classList.contains('_1ifu');
     var huge = node.classList.contains('_19_r');
+    // the filename of the png is also the codepoint
     node.outerHTML = '<span style="font-family: "Apple Color Emoji";font-size:'+(large?'2rem;':(huge?'3rem;':'1rem;'))+'">&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';</span>';
   }
 
@@ -24,9 +26,9 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
       try {
         var added = mutation.addedNodes;
         if (added) {
-          // go over all dom changes
+          // go over all DOM changes
           for (var i = 0; i < added.length; i++) {
-            // check if it has a src
+            // check if it has a source
             if (typeof added[i].src != 'undefined') {
               // check if it's an evil emoji
               if (added[i].src.includes('emoji.php')) {
@@ -54,10 +56,9 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
 
     // fancy way that isn't done
     //
-    // observator on the body for just the childList
+    // observer on the body only for the childList
     // observer.observe(document.body, {
     //   childList: true
     // });
   });
-
 }
