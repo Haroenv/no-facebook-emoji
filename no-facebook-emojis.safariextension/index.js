@@ -9,6 +9,10 @@ if (location.href.includes('facebook.com') || location.href.includes('messenger.
     var huge = node.classList.contains('_19_r');
     // the filename of the png is also the codepoint
     node.outerHTML = '<span style="font-family: "Apple Color Emoji";font-size:'+(large?'2rem;':(huge?'3rem;':'1em;'))+'">&#x' + node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0] + ';</span>';
+
+    // other approach: use github emoji images instead
+    // (also don't work with modifiers)
+    // node.src = 'https://assets.github.com/images/icons/emoji/unicode/'+node.src.match(/(?!\/)[a-f0-9]+(?=\.png)/)[0]+'.png';
   }
 
   // find all emojis
