@@ -1,11 +1,9 @@
 language: shell
-branches:
-  only:
-  - master
 before_install:
   - openssl aes-256-cbc -K $encrypted_997071d05769_key -iv $encrypted_997071d05769_iv -in chrome.pem.enc -out chrome.pem -d
 script:
-  - ./src/crxmake.sh chrome chrome.pem chrome.crx
+  - ./src/buildscripts/crxmake.sh chrome chrome.pem chrome.crx
+  - ./src/buildscripts/xpimake.sh firefox
   - zip -r no-facebook-emojis.safariextension.zip no-facebook-emojis.safariextension
 deploy:
   skip_cleanup: true
@@ -17,7 +15,6 @@ deploy:
     - no-facebook-emojis.safariextz
     - chrome.crx
   on:
-    # todo: why does this not properly work
     tags: true
     repo: Haroenv/no-facebook-emojis
-    branch: master
+    all_branches: true
